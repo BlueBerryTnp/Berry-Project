@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .form-register{
+            margin: auto;
+            padding: 50px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <form class="form-register">
+        <span>
+            <label for="firstname">ชื่อ:</label>
+            <input type="text" name="fname" placeholder="ป้อนข้อความ" required>
+        </span>
+        <span>
+            <label for="lastname">นามสกุล:</label>
+            <input type="text" name="lname" placeholder="ป้อนข้อความ" required>
+        </span>
+        <br>
+        <span>
+            <label for="age">อายุ:</label>
+            <input type="number" name="age" placeholder="ป้อนอายุ" min="1" max="100" value="1" readonly>
+        </span>
+        <span>
+            <label for="gender">เพศ:</label>
+            <input type="radio" name="gender" required>ชาย
+            <input type="radio" name="gender" required>หญิง
+            <input type="radio" name="gender" required>อื่นๆ
+        </span>
+        <div>
+            <label for="birth">วันเกิด:</label>
+            <input type="date" name="birth" required>
+        </div>
+        <div>
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" name="phone" placeholder="ป้อนเบอร์โทรศัพท์" required>
+        </div>
+        <div>
+            <label for="region">ศาสนา:</label>
+            <select name="region" id="" required>
+                <option value="พุทธ">พุทธ</option>
+                <option value="คริสต์">คริสต์</option>
+                <option value="อิสลาม">อิสลาม</option>
+                <option value="พราหมณ์-ฮินดู">พราหมณ์-ฮินดู</option>
+                <option value="ไม่มีศาสนา" selected>ไม่มีศาสนา</option>
+            </select>
+        </div>
+        <div>
+            <label for="cl">สีที่ชอบ:</label>
+            <input type="color" name="cl">
+        </div>
+        <div>
+            <label for="favorite">สิ่งที่ชอบ:</label>
+            <input type="checkbox" name="favorite0">เรียน
+            <input type="checkbox" name="favorite1">ดูหนัง
+            <input type="checkbox" name="favorite2">ฟังเพลง
+            <input type="checkbox" name="favorite3">เล่นเกม
+            <input type="checkbox" name="favorite4">อื่นๆ
+        </div>
+        <div>
+            <label for="email">อีเมล:</label>
+            <input type="email" name="email" placeholder="ป้อนอีเมล">
+        </div>
+        <div>
+            <label for="password">พาสเวิร์ด:</label>
+            <input type="password" name="password" placeholder="ป้อนรหัสผ่าน">
+        </div>
+        <span>
+            <p>ที่อยู่:</p>
+            <label for="address"></label>
+            <textarea name="address"cols="30" rows="10" readonly>
+            </textarea>
+        </span>
+        <div>
+            <label for="rangenumber">ช่วงตัวเลข:</label>
+            <input type="range" name="rangenumber">
+        </div>
+        <div>
+            <label for="file">แนบเอกสาร:</label>
+            <input type="file" name="document">
+        </div>
+        <div>
+            <label for="website">แนบเอกสาร:</label>
+            <input type="url" name="website">
+        </div>
+        <span>
+            <input type="submit" value="บันทึก">
+        </span>
+        <span>
+            <button type="reset">รีเซ็ต</button>
+        </span>
+    </form>
+</body>
+</html>
